@@ -1,1 +1,91 @@
-
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ofício e Afeto - TCC</title>
+<style>
+:root{--bege:#FDF6EC;--marrom:#5C3D2E;--verde:#4A7C59;--laranja:#E07A5F;--creme:#FFF9F0}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:var(--creme);color:var(--marrom);line-height:1.7}
+h1,h2,h3{font-family:'Merriweather',serif}
+header{padding:20px 6%;display:flex;justify-content:space-between;align-items:center;background:var(--bege);position:sticky;top:0;z-index:10}
+.logo{font-weight:700;font-size:1.4rem}.logo span{color:var(--verde)}
+nav a{margin-left:24px;text-decoration:none;color:var(--marrom);font-weight:600}
+.hero{display:grid;grid-template-columns:1.2fr 0.8fr;gap:40px;padding:80px 6%;background:var(--bege)}
+.hero h1{font-size:3.2rem;line-height:1.1;margin-bottom:20px}
+.hero h1 em{font-style:normal;color:var(--verde);background:#E8F0E9;padding:0 10px;border-radius:8px}
+.btn{display:inline-block;padding:14px 28px;border-radius:30px;text-decoration:none;font-weight:700;margin-right:12px;margin-top:10px}
+.btn-prim{background:var(--verde);color:white}.btn-sec{border:2px solid var(--marrom);color:var(--marrom)}
+.card-img{background:#EADBC8;border-radius:24px;height:360px;display:flex;align-items:center;justify-content:center;font-size:5rem}
+.section{padding:70px 6%}.section-dark{background:var(--marrom);color:var(--bege);border-radius:40px;margin:20px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:30px}
+.card{background:white;padding:28px;border-radius:20px;box-shadow:0 4px 20px rgba(0,0,0,0.06)}
+.tag{display:inline-block;background:var(--bege);padding:4px 12px;border-radius:20px;font-size:0.8rem;font-weight:700;margin-bottom:12px}
+.recycle{display:grid;grid-template-columns:1fr 1fr;gap:40px;background:#E8F0E9;border-radius:32px;padding:50px}
+.forms{background:var(--bege);border-radius:32px;padding:50px}
+.tabs{display:flex;gap:10px;margin:30px 0;flex-wrap:wrap}
+.tab{padding:10px 20px;border-radius:30px;border:2px solid var(--marrom);cursor:pointer;font-weight:600;background:transparent}
+.tab.active{background:var(--marrom);color:white}
+.form-box{display:none;background:white;padding:32px;border-radius:20px;max-width:700px}
+.form-box.active{display:block}
+.form-box label{display:block;margin:14px 0 6px;font-weight:600}
+.form-box input,.form-box select,.form-box textarea{width:100%;padding:14px;border-radius:12px;border:1.5px solid #D9CFC2;font-size:1rem}
+.submit{margin-top:20px;background:var(--laranja);color:white;border:none;padding:14px 26px;border-radius:30px;font-weight:700;cursor:pointer;width:100%}
+footer{text-align:center;padding:40px;color:#8C7A6E}
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header><div class="logo">Ofício <span>e Afeto</span></div><nav><a href="#sobre">Sobre</a><a href="#como">Como funciona</a><a href="#recicla">Recicláveis</a><a href="#participe">Participe</a></nav></header>
+<section class="hero"><div><h1>Ninguém deveria envelhecer <em>sozinho.</em></h1><p>Ofício e Afeto cria espaços onde idosos saem do isolamento, compartilham sua sabedoria com jovens e aprendem tecnologia e movimento.</p><a href="#participe" class="btn btn-prim">Quero participar</a><a href="#sobre" class="btn btn-sec">Conhecer projeto</a></div><div class="card-img">👵🏽 🤝 👨🏻‍💻</div></section>
+<section id="sobre" class="section"><h2>O problema que ninguém vê</h2><p>Muitos idosos estão presos dentro de casa por falta de companhia e descaso. O Ofício e Afeto nasce para mudar isso.</p><div class="grid3"><div class="card"><span class="tag">ISOLAMENTO</span><h3>Corpo parado</h3><p>Falta de exercício tira autonomia e aumenta quedas.</p></div><div class="card"><span class="tag">SOLIDÃO</span><h3>Afeto em falta</h3><p>Solidão afeta memória e autoestima.</p></div><div class="card"><span class="tag">DESPERDÍCIO</span><h3>Sabedoria esquecida</h3><p>Ofícios que poderiam ensinar os jovens se perdem.</p></div></div></section>
+<section id="como" class="section section-dark"><h2>Como funciona nosso espaço</h2><p>Troca intergeracional, simples e humana.</p><div class="grid3"><div class="card" style="color:#5C3D2E"><h3>👵 Para Idosos</h3><p>Ensina seu ofício e aprende tecnologia e exercícios.</p></div><div class="card" style="color:#5C3D2E"><h3>🙋 Para Jovens</h3><p>Doa 2h por semana e aprende um ofício real.</p></div><div class="card" style="color:#5C3D2E"><h3>📚 Cursos de Troca</h3><p>Bordado da Dona Cida, Celular sem medo, Alongar sem cair.</p></div></div></section>
+<section id="recicla" class="section"><div class="recycle"><div><h2>Traga recicláveis, vire equipamento</h2><p>Seu lixo vira afeto.</p><ul><li><b>Garrafas PET</b> → pesos para exercícios</li><li><b>Tecidos</b> → material de costura</li><li><b>Madeira</b> → bancos e hortas</li><li><b>Celulares antigos</b> → aula de tecnologia</li></ul></div><div class="card"><h3>Ponto de Coleta</h3><p>Seg a Sex - 9h às 16h - Rua do Afeto, 123 - SP<br>Leve limpo e separado!</p><p style="margin-top:20px"><b>Parcerias:</b> Supermercados, Escolas, Igrejas</p></div></div></section>
+<section id="participe" class="section forms"><h2>Faça parte do Ofício e Afeto</h2><p>Escolha como quer participar. Seu cadastro vai direto para nossa planilha.</p>
+<div class="tabs"><button class="tab active" onclick="showTab('idoso')">Sou Idoso(a)</button><button class="tab" onclick="showTab('jovem')">Sou Jovem Voluntário</button><button class="tab" onclick="showTab('curso')">Propor Curso</button></div>
+  <div id="form-idoso" class="form-box active">
+    <h3>Idoso Participante - Quero Ensinar</h3>
+    <label>Nome completo (3 a 50 caracteres)</label><input id="idoso-nome" type="text" maxlength="50" placeholder="Ex: Maria Silva">
+    <label>Idade (50 a 120 anos)</label><input id="idoso-idade" type="number" inputmode="numeric" pattern="[0-9]*" min="50" max="120" maxlength="3" oninput="if(this.value.length > 3) this.value = this.value.slice(0,3); if(Number(this.value) > 120) this.value = 120;" placeholder="Ex: 68">
+    <label>Telefone / WhatsApp</label><input id="idoso-tel" type="tel" inputmode="numeric" pattern="[0-9]*" maxlength="15" oninput="this.value = telefoneMask(this.value)" placeholder="(11) 99999-9999">
+    <label>O que quer ensinar?</label><input id="idoso-ensinar" type="text" maxlength="60" placeholder="Ex: Crochê, Bordado, Horta">
+    <button class="submit" onclick="enviarForm('idoso')">Quero participar</button>
+    <p id="msg-idoso" style="text-align:center; margin-top:15px; font-weight:700"></p>
+  </div>
+  <div id="form-jovem" class="form-box">
+    <h3>Jovem Voluntário - Quero Ajudar</h3>
+    <label>Nome completo (3 a 50 caracteres)</label><input id="jovem-nome" type="text" maxlength="50" placeholder="Ex: João Pedro">
+    <label>Idade (14 a 49 anos)</label><input id="jovem-idade" type="number" inputmode="numeric" pattern="[0-9]*" min="14" max="49" maxlength="2" oninput="if(this.value.length > 2) this.value = this.value.slice(0,2); if(Number(this.value) > 49) this.value = 49;" placeholder="Ex: 22">
+    <label>WhatsApp</label><input id="jovem-tel" type="tel" inputmode="numeric" pattern="[0-9]*" maxlength="15" oninput="this.value = telefoneMask(this.value)" placeholder="(11) 99999-9999">
+    <label>O que pode ensinar?</label><input id="jovem-ensinar" type="text" maxlength="60" placeholder="Ex: Celular, Computador, Alongamento">
+    <button class="submit" onclick="enviarForm('jovem')">Quero ser voluntário</button>
+    <p id="msg-jovem" style="text-align:center; margin-top:15px; font-weight:700"></p>
+  </div>
+  <div id="form-curso" class="form-box">
+    <div id="curso-lock"><h3>Área Restrita 🔒 - Professores</h3><label>Digite a senha para propor curso</label><input id="input-senha" type="password" placeholder="Senha"><button class="submit" onclick="verificarSenha()">Desbloquear</button><p id="msg-senha" style="text-align:center; color:red; margin-top:10px; font-weight:600"></p></div>
+    <div id="curso-form-real" style="display:none;"><h3>Proposta de Curso de Troca</h3><label>Seu nome (organizador)</label><input id="curso-nome" type="text" maxlength="50"><label>Nome do curso</label><input id="curso-titulo" type="text" maxlength="50" placeholder="Ex: Celular sem Medo"><label>Descrição do curso</label><textarea id="curso-desc" maxlength="200" placeholder="Como será o curso..."></textarea><label>Materiais recicláveis necessários</label><input id="curso-rec" type="text" maxlength="60" placeholder="Ex: Garrafas PET, tecidos"><button class="submit" onclick="enviarForm('curso')">Enviar proposta</button><p id="msg-curso" style="text-align:center; margin-top:15px; font-weight:700"></p></div>
+  </div>
+</section>
+<footer>TCC - Ofício e Afeto - Conectando Gerações através do Afeto e Sustentabilidade | 2026</footer>
+<script>
+const GOOGLE_SHEETS_URL = "https://script.google.com/macros/s/AKfycbzL0plS0CztxAwli4jpyZ6vDOxi_rHqcOeWb9P6q2xdEjzbFOKKaDj1cIOla6v7blWjIA/exec";
+const SENHA_CURSO = "prof2026";
+function verificarSenha(){const s=document.getElementById('input-senha').value;const m=document.getElementById('msg-senha');if(s===SENHA_CURSO){document.getElementById('curso-lock').style.display='none';document.getElementById('curso-form-real').style.display='block';}else{m.innerText="Senha incorreta!";}}
+function telefoneMask(v){v=v.replace(/\D/g,"");v=v.replace(/^(\d{2})(\d)/g,"($1) $2");v=v.replace(/(\d)(\d{4})$/,"$1-$2");if(v.length>15)v=v.slice(0,15);return v;}
+function showTab(t){document.querySelectorAll('.tab').forEach(b=>b.classList.remove('active'));document.querySelectorAll('.form-box').forEach(f=>f.classList.remove('active'));let idx=t==='idoso'?0:t==='jovem'?1:2;document.querySelectorAll('.tab')[idx].classList.add('active');document.getElementById('form-'+t).classList.add('active');}
+async function enviarForm(tipo){
+  const btn=event.target;const textoOriginal=btn.innerText;btn.innerText="Enviando...";btn.disabled=true;
+  let dados={};
+  if(tipo==='idoso'){dados={tipo:"IDOSO",nome:document.getElementById('idoso-nome').value.trim(),idade:document.getElementById('idoso-idade').value,contato:document.getElementById('idoso-tel').value,ensinar:document.getElementById('idoso-ensinar').value,extra:"",data:new Date().toLocaleString('pt-BR')};}
+  if(tipo==='jovem'){dados={tipo:"JOVEM VOLUNTARIO",nome:document.getElementById('jovem-nome').value.trim(),idade:document.getElementById('jovem-idade').value,contato:document.getElementById('jovem-tel').value,ensinar:document.getElementById('jovem-ensinar').value,extra:"",data:new Date().toLocaleString('pt-BR')};}
+  if(tipo==='curso'){dados={tipo:"CURSO",nome:document.getElementById('curso-nome').value.trim(),idade:"",contato:"",ensinar:document.getElementById('curso-titulo').value,extra:document.getElementById('curso-desc').value+" | Recicláveis: "+document.getElementById('curso-rec').value,data:new Date().toLocaleString('pt-BR')};}
+  if(!dados.nome || dados.nome.length<3){alert("Nome inválido! Mínimo 3 caracteres.");btn.innerText=textoOriginal;btn.disabled=false;return;}
+  if(dados.nome.length>50){alert("Nome muito longo! Máximo 50 caracteres.");btn.innerText=textoOriginal;btn.disabled=false;return;}
+  if(tipo==='idoso' && dados.idade!==""){if(Number(dados.idade)<50){alert("⛔ ACESSO NEGADO: Idade mínima para idoso é 50 anos!");const m=document.getElementById('msg-'+tipo);if(m){m.innerText="⛔ Mínimo 50 anos.";m.style.color="red";}btn.innerText=textoOriginal;btn.disabled=false;return;}if(Number(dados.idade)>120){alert("⛔ ACESSO NEGADO: Idade máxima para idoso é 120 anos!");const m=document.getElementById('msg-'+tipo);if(m){m.innerText="⛔ Máximo 120 anos.";m.style.color="red";}btn.innerText=textoOriginal;btn.disabled=false;return;}}
+  if(tipo==='jovem' && dados.idade!==""){if(Number(dados.idade)<14){alert("⛔ ACESSO NEGADO: Idade mínima para jovem é 14 anos!");const m=document.getElementById('msg-'+tipo);if(m){m.innerText="⛔ Mínimo 14 anos.";m.style.color="red";}btn.innerText=textoOriginal;btn.disabled=false;return;}if(Number(dados.idade)>49){alert("⛔ ACESSO NEGADO: Idade máxima para jovem é 49 anos!");const m=document.getElementById('msg-'+tipo);if(m){m.innerText="⛔ Máximo 49 anos.";m.style.color="red";}btn.innerText=textoOriginal;btn.disabled=false;return;}}
+  try{await fetch(GOOGLE_SHEETS_URL,{method:"POST",mode:"no-cors",body:JSON.stringify(dados)});alert("✅ Inscrição salva com sucesso na planilha! Obrigado por fazer parte do Ofício e Afeto 💚");document.querySelectorAll("input, textarea").forEach(i=>{ if(i.id!=='input-senha') i.value=""; });}catch(e){alert("Erro ao salvar, mas seus dados foram copiados: "+JSON.stringify(dados));}btn.innerText=textoOriginal;btn.disabled=false;
+}
+</script>
+</body>
+                                         </html>
